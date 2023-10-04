@@ -1,0 +1,65 @@
+<h1>Course Registration Form</h1>
+<form action="http://127.0.0.1:5500/form.html">
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <table>
+            <tr>
+                <td><label >First Name</label><td><input type="text" name="FN" placeholder="Ex:Banti" size="15" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label >Last Name</label> </td><td><input type="text" name="LN" placeholder="Ex:Rathod" size="15" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label >Mobile Number</label> </td><td><input type="tel" name="MN" placeholder="Ex:+91 7020797849" size="15"></td>
+            </tr>
+            <tr>
+                <td><label >Email</label> </td><td><input type="email" name="EM" placeholder="Ex:bantirathod.jfsjd@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label >Create Password</label> </td><td><input type="password" name="PW" placeholder="Min 5 Character"></td>
+            <tr>
+            </tr>
+                <td><label >Confirm Password</label> </td><td><input type="password" name="CPW" placeholder="Min 5 Character"></td>
+            </tr>
+            <tr>
+                <td><label >DOB</label> </td><td><input type="date" name="DT"></td>
+            </tr>
+            <tr>
+                <td><label >Gender</label> </td><td><input type="radio" name="Gender" value="M">Male<input type="radio" name="Gender" value="F">Female<input type="radio" name="Gender" value="T">Transgender</td>
+            </tr>
+            <tr>
+                <td><label for="">Select Country</label></td>
+                <td>
+                    <select name="Country" id="">
+                    <option value="INDIA">INDIA</option>
+                    <option value="USA">USA</option>
+                    <option value="CHINA">CHINA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Upload Picture</label></td><td><input type="file" name="Picture"></td>
+            </tr>
+        </table>
+        <input type="reset">
+        </fieldset>
+        
+        <fieldset>
+        <legend>Course Details</legend>
+        <label for="">Select Course</label>
+        <select name="" id="">
+            <option value="FD">Frontend</option>
+            <option value="BD">Backend</option>
+            <option value="DB">Database</option>
+        </select><br>
+        <label for="">Delivery Mode</label>
+        <input type="checkbox" name="mode1" value="ON">ONLINE
+        <input type="checkbox" name="mode2" value="OFF">OFFLINE <br>
+        <label for="">Comment</label><br>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+        </fieldset>
+        <button>Submit Form</button>
+        
+</form>
+    
